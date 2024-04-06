@@ -1,0 +1,12 @@
+{
+  "name": "com.ahengine.ustyler",
+  "version": "1.0.0",
+  "displayName": "UStyler",
+  "description": "UStyler is minimal UI Style handler, router based on Design System",
+  "unity": "2021.1",
+  "unityRelease": "0b5",
+  "author": {
+    "name": "Hamidreza Karamian"
+  },
+  "type": "library"
+}
