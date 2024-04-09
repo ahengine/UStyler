@@ -9,8 +9,8 @@ namespace UStyle
     where StyleComp  : Component
     {
 
-        [SerializeField] protected StateCard ColorState;
-        private StyleComp styleComp;
+        [SerializeField] protected StateCard stateCard;
+        protected StyleComp styleComp;
 
         protected override void Awake()
         {
