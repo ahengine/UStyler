@@ -6,7 +6,7 @@ namespace UStyle
     {
         [SerializeField] private StyleStateType[] states;
 
-        public virtual StyleCardType Get(StateComp state)
+        public virtual StyleCardType Get(StateCard state)
         {
             for (int i = 0; i < states.Length; i++)
                 if (states[i].state == state)
@@ -19,7 +19,7 @@ namespace UStyle
     [System.Serializable]
     public class StyleState<T> where T : StyleCard
     {
-        public StateComp state;
+        public StateCard state;
         public T Card;
     }
 }

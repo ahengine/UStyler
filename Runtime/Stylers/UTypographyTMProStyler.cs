@@ -6,7 +6,7 @@ namespace UStyle
 {
     public class UTypographyTMProStyler : UStyler<TypographyTMProStateCard, TypographyTMProState, TypographyTMProCard,TextMeshProUGUI >
     {
-        public override void ApplyState(StateComp state)
+        public override void ApplyState(StateCard state)
         {
             base.ApplyState(state);
             

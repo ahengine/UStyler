@@ -4,11 +4,16 @@ namespace UStyle
 {
     public class UColorStyler : UStyler<ColorStateCard, ColorState, ColorCard, Graphic>
     {
-        public override void ApplyState(StateComp state)
+        public override void ApplyState(StateCard state)
         {
             base.ApplyState(state);
 
-            styleComp.color = stateCard.Get(state).Color;
+            var colorState = stateCard.Get(state);
+
+            if (!colorState || !styleComp)
+                return;
+
+                styleComp.color = colorState.Color;
         }
     }
 }
