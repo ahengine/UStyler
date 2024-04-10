@@ -1,13 +1,15 @@
+using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace UStyle
 {
-    public class UFontStyler : UStyler<FontStateCard, FontState, FontCard, Text>
+    public class UTypographyTMProStyler : UStyler<TypographyTMProStateCard, TypographyTMProState, TypographyTMProCard,TextMeshProUGUI >
     {
         public override void ApplyState(StateComp state)
         {
             base.ApplyState(state);
-
+            
             var fontData = stateCard.Get(state);
 
             styleComp.font = fontData.Asset;

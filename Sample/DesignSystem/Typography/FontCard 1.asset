@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7855a595e2e58347ad5a9a0ff89f95b, type: 3}
+  m_Name: FontCard 1
+  m_EditorClassIdentifier: 
+  <Size>k__BackingField: 14
+  <Asset>k__BackingField: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  <Style>k__BackingField: 1
+  <colorCard>k__BackingField: {fileID: 11400000, guid: de153f7806381ac4a81ae25e46b0c794, type: 2}
