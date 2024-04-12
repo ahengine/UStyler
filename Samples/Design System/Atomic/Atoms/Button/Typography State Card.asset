@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Typography State Card
   m_EditorClassIdentifier: 
   states:
-  - state: 0
+  - state: {fileID: 11400000, guid: f50f1206fe4ee2b44b5b28f7e9bb1fed, type: 2}
     Card: {fileID: 11400000, guid: 77201e228ae1de542aa30fb338533d3f, type: 2}
-  - state: 1
+  - state: {fileID: 11400000, guid: 848375e1eda190546ac247c62252cf8d, type: 2}
     Card: {fileID: 11400000, guid: 77201e228ae1de542aa30fb338533d3f, type: 2}
-  - state: 2
+  - state: {fileID: 11400000, guid: 7b2c5e5b24cf23b43ac8de4fbe526918, type: 2}
     Card: {fileID: 11400000, guid: 77201e228ae1de542aa30fb338533d3f, type: 2}
-  - state: 3
+  - state: {fileID: 11400000, guid: f3295d7585bed3a4f9625715d57193b1, type: 2}
     Card: {fileID: 11400000, guid: 52680cc59c5c5d048bb1dad28cc0ad9c, type: 2}

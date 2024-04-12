@@ -131,6 +131,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1741682194}
     m_Modifications:
+    - target: {fileID: 2242214062769847540, guid: b8e230616711f334d9658bd488f68eb5, type: 3}
+      propertyPath: setSingleStateOnEnable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5090886791926225691, guid: b8e230616711f334d9658bd488f68eb5, type: 3}
+      propertyPath: setSingleStateOnEnable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5433491518175233980, guid: b8e230616711f334d9658bd488f68eb5, type: 3}
       propertyPath: m_Name
       value: Button
@@ -213,6 +221,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6733232271128288426, guid: b8e230616711f334d9658bd488f68eb5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7438576073164778214, guid: b8e230616711f334d9658bd488f68eb5, type: 3}
+      propertyPath: parent
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

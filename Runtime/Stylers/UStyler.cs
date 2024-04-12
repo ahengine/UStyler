@@ -2,20 +2,22 @@ using UnityEngine;
 
 namespace UStyle
 {
-    public class UStyler<StateCard, StyleStateT, StyleCardT, StyleComp> : UStylerBase
-    where StateCard  : StyleStateCard<StyleStateT, StyleCardT>
-    where StyleStateT : StyleState<StyleCardT>
-    where StyleCardT  : StyleCard
-    where StyleComp  : Component
+    public class UStyler<StyleCardT,StyleComp> : UStylerGeneric<StyleCardT, StyleComp>
+    where StyleCardT : StyleCard
+    where StyleComp : Component
     {
+        [SerializeField] protected StyleCardT card;
 
-        [SerializeField] protected StateCard stateCard;
-        protected StyleComp styleComp;
+        protected virtual void OnEnable() =>
+            SetStyle(card);
 
-        protected override void Awake()
-        {
-            base.Awake();
+        #if UNITY_EDITOR
+        [ContextMenu("Apply Style")]
+        private void OnValidate() {
             styleComp = GetComponent<StyleComp>();
+            SetStyle(card);
+            Debug.Log(name+ " - Style Updated");
         }
+        #endif
     }
 }
