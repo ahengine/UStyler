@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UStyle
+namespace UStyler
 {
     public class UStylerBase : MonoBehaviour
     {

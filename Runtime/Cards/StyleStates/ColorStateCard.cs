@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UStyle
+namespace UStyler
 {
     [CreateAssetMenu(fileName = "Color State Card", menuName = "UStyler/Color State Card", order = 0)]
     public class ColorStateCard : StyleStateCard<ColorState, ColorCard> { }

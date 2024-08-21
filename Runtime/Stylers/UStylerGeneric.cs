@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UStyle
+namespace UStyler
 {
     public class UStylerGeneric<StyleCardT, StyleComp> : UStylerBase
     where StyleCardT  : StyleCard

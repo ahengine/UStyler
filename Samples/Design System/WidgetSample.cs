@@ -1,5 +1,5 @@
 using UnityEngine;
-using UStyle;
+using UStyler;
 
 public class WidgetSample : MonoBehaviour
 {

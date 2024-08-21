@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace UStyle
+namespace UStyler
 {
     [CreateAssetMenu(fileName = "Typography TMPro Card", menuName = "UStyler/Typography TMPro Card", order = 0)]
     public class TypographyTMProCard : StyleCard

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UStyle
+namespace UStyler
 {
     public abstract class StyleCard : ScriptableObject
     {

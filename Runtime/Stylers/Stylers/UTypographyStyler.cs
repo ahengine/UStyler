@@ -1,6 +1,6 @@
 using UnityEngine.UI;
 
-namespace UStyle
+namespace UStyler
 {
     public class UTypographyStyler : UStyler<TypographyCard, Text>
     {

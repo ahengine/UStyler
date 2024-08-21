@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UStyle
+namespace UStyler
 {
     public abstract class StyleStateCard<StyleStateType, StyleCardType> : ScriptableObject where StyleStateType : StyleState<StyleCardType> where StyleCardType : StyleCard
     {

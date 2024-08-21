@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace UStyle
+namespace UStyler
 {
     [CreateAssetMenu(fileName = "Typography TMPro State Card", menuName = "UStyler/Typography TMPro State Card", order = 0)]
     public class TypographyTMProStateCard : StyleStateCard<TypographyTMProState, TypographyTMProCard> { }

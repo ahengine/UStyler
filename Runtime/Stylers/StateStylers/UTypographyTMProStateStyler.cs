@@ -1,6 +1,6 @@
 using TMPro;
 
-namespace UStyle
+namespace UStyler
 {
     public class UTypographyTMProStateStyler : UStateStyler<TypographyTMProStateCard, TypographyTMProState, TypographyTMProCard,TextMeshProUGUI >
     {
