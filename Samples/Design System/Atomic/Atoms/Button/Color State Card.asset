@@ -10,14 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 07887d4309a37134ab5435a85c0b915f, type: 3}
-  m_Name: ColorCard
+  m_Name: Color State Card
   m_EditorClassIdentifier: 
   states:
   - state: {fileID: 11400000, guid: 7b2c5e5b24cf23b43ac8de4fbe526918, type: 2}
     Card: {fileID: 11400000, guid: 7f0b0490b62c61c4282f287576a35830, type: 2}
-  - state: {fileID: 11400000, guid: f3295d7585bed3a4f9625715d57193b1, type: 2}
-    Card: {fileID: 11400000, guid: 0cfbcf0723d369448b881a9cb29575aa, type: 2}
   - state: {fileID: 11400000, guid: 848375e1eda190546ac247c62252cf8d, type: 2}
-    Card: {fileID: 11400000, guid: 7f0b0490b62c61c4282f287576a35830, type: 2}
+    Card: {fileID: 11400000, guid: dfd9f36f7a3f01c47919293311633c53, type: 2}
+  - state: {fileID: 11400000, guid: f3295d7585bed3a4f9625715d57193b1, type: 2}
+    Card: {fileID: 11400000, guid: 832d1ea86d7906c4b8c16c7eb4775c33, type: 2}
   - state: {fileID: 11400000, guid: f50f1206fe4ee2b44b5b28f7e9bb1fed, type: 2}
-    Card: {fileID: 11400000, guid: 6e646a7efa95d8d49a542f5b5329f10f, type: 2}
+    Card: {fileID: 11400000, guid: 0cfbcf0723d369448b881a9cb29575aa, type: 2}

@@ -3,20 +3,20 @@ using UnityEngine;
 
 namespace UStyler
 {
-    public class UStylerBase : MonoBehaviour
+    public class UStylerBase : MonoBehaviour, IStateBase
     {
         [SerializeField] private bool parent;
-        private List<UStylerBase> childs = new List<UStylerBase>();
+        private List<IStateBase> childs = new List<IStateBase>();
 
         protected virtual void Awake()
         {
             if (!parent)
                 return;
 
-            var items = GetComponentsInChildren<UStylerBase>();
+            var items = GetComponentsInChildren<IStateBase>();
 
             for (int i = 0; i < items.Length; i++)
-                if(items[i] != this)
+                if(items[i] != (IStateBase)this)
                     childs.Add(items[i]);
         }
 
@@ -28,14 +28,9 @@ namespace UStyler
             {
                 for (int i = 0; i < childs.Count; i++)
                     childs[i].ApplyState(state);
-            }
- 
-             
+            }  
         }
 
-        public virtual void ApplyState(StateCard state)
-        {
-
-        }
+        public virtual void ApplyState(StateCard state) {}
     }
 }

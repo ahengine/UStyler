@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UStyler
 {
-    [CreateAssetMenu(fileName = "Typography TMPro Card", menuName = "UStyler/Typography TMPro Card", order = 0)]
+    [CreateAssetMenu(fileName = "Typography TMPro Card", menuName = "UStyler/Card/Typography TMPro Card", order = 0)]
     public class TypographyTMProCard : StyleCard
     {
         [field: SerializeField] public int Size { private set; get; } = 14;
