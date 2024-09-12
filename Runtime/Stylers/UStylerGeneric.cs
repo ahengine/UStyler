@@ -16,7 +16,9 @@ namespace UStyler
         
         public virtual void SetStyle(StyleCardT style)
         {
-
+            #if UNITY_EDITOR
+                styleComp = GetComponent<StyleComp>();
+            #endif
         }
     }
 }

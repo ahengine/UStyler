@@ -11,11 +11,12 @@ namespace UStyler
         }
 
         public override void SetStyle(ColorCard style)
-        {         
+        {   
+            base.SetStyle(style);
+            
             if (!style || !styleComp)
                 return;
 
-            base.SetStyle(style);
             styleComp.color = style.Color;
         }
     }

@@ -75,12 +75,8 @@ namespace UStyler
     
         public void SetInteractable(bool state)
         {
-             button.interactable = state;
-
-             if(state)
-                ApplyState(states.Default);
-            else
-                ApplyState(states.Disable);
+            button.interactable = state;
+            ApplyState(state?states.Default:states.Disable);
         }
 
         [ContextMenu("Change Interactable")]

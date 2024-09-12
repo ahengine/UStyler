@@ -12,10 +12,11 @@ namespace UStyler
 
         public override void SetStyle(ImageCard style)
         {         
+            base.SetStyle(style);
+            
             if (!style || !styleComp)
                 return;
 
-            base.SetStyle(style);
             styleComp.sprite = style.Sprite;
             styleComp.color = style.Color;
         }
