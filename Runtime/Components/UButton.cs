@@ -86,7 +86,9 @@ namespace UStyler
         [ContextMenu("Change Interactable")]
         public void ChangeInteractable()
         {
+            #if UNITY_EDITOR
             states = Resources.Load<UButtonStates>(typeof(UButtonStates).Name);
+            #endif
             SetInteractable(!button.interactable);
         }
 
