@@ -82,5 +82,9 @@ namespace UStyler
             else
                 ApplyState(states.Disable);
         }
+
+        [ContextMenu("Change Interactable")]
+        public void ChangeInteractable() =>
+            SetInteractable(!button.interactable);
     }
 }
