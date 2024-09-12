@@ -93,8 +93,13 @@ namespace UStyler
         }
 
         [ContextMenu("Apply Default")]
-        public void ApplyDefault() =>
+        public void ApplyDefault() 
+        {
+            staters = GetComponentsInChildren<IStateBase>();
             ApplyState(Resources.Load<UButtonStates>(typeof(UButtonStates).Name).Default);
+        }
         
+        private void OnValidate() =>
+            ApplyDefault();
     }
 }
