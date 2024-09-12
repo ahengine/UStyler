@@ -84,7 +84,15 @@ namespace UStyler
         }
 
         [ContextMenu("Change Interactable")]
-        public void ChangeInteractable() =>
+        public void ChangeInteractable()
+        {
+            states = Resources.Load<UButtonStates>(typeof(UButtonStates).Name);
             SetInteractable(!button.interactable);
+        }
+
+        [ContextMenu("Apply Default")]
+        public void ApplyDefault() =>
+            ApplyState(Resources.Load<UButtonStates>(typeof(UButtonStates).Name).Default);
+        
     }
 }
